@@ -1,74 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="LIVE 2013 : Workshop in Live Programming 2013" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>LIVE 2013 by liveprogramming</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>LIVE 2013</title>
   </head>
-
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/liveprogramming/2013">View on GitHub</a>
+      <header>
+        <h1>LIVE 2013</h1>
+        <p>Workshop in Live Programming 2013</p>
+      </header>
 
-          <h1 id="project_title">LIVE 2013</h1>
-          <h2 id="project_tagline">Workshop in Live Programming 2013</h2>
+      <div id="banner">
+        <span id="logo"></span>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/liveprogramming/2013/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/liveprogramming/2013/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+        <a href="https://github.com/liveprogramming/2013" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/liveprogramming/2013/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/liveprogramming/2013/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <p>Welcome to the official website for LIVE 2013, the Workshop on Live Programming. </p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<h2>The short version</h2>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<p>This workshop will focus on exploring notions and degrees of live programming as they relate to software development, creative activities, learning, and performance. </p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>The workshop is a venue for sharing exciting live programming ideas,
+demos, and getting diverse feedback on ideas and
+works-in-progress. </p>
 
-<h3>Designer Templates</h3>
+<p>We are interested in techniques, tools, demos, infrastructures, language design insights, and questions that stimulate interest and understanding in live programming concepts.</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>The workshop will consist of morning demo/lightning
+talk sessions, and the remainder of the day will be in an unconference
+format. </p>
 
-<h3>Rather Drive Stick?</h3>
+<p>We invite submissions of demos or position papers broadly related to live programming. The submission deadline is XXX.
+The workshop will be held on May XX, co-located with ICSE 2013 in San Francisco, USA.</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h2>What is live programming?</h2>
 
-<h3>Authors and Contributors</h3>
+<p>Live programming is a recent catchphrase for programming systems that change the traditional, synchronous edit/compile/run conversation of programming into an asynchronous conversation with instantaneous, intuitive, and often visual feedback. </p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>In the past year, the concept of <em>live programming</em> has captured the imagination of professional software developers and software engineering researchers. Bret Victor's February talk <a href="http://vimeo.com/36579366">"Inventing on Principle"</a>, which features compelling demonstrations of live programming concepts, has spurred widespread interest, discussions, and followup experiments. Since then, new projects such as <a href="http://www.lighttable.com/">Light Table</a>, <a href="http://circa-lang.org/">Circa</a>, and others have explored various dimensions of liveness in programming languages and environments. Meanwhile, in the past few years a <a href="http://toplap.org/">community</a> has formed around the related idea of <em>live coding</em>---live audiovisual performances which use computers and algorithms as ephemerally constructed instruments. In contrast to the reflective, persistent nature of live programming precursors like Smalltalk, live coding emphasizes the ephemeral, reactive nature of live performance.</p>
 
-<h3>Support or Contact</h3>
+<h2>Topics</h2>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>The topics below are examples, not bounds. We hope to form a research agenda by bringing people with diverse viewpoints and backgrounds together. So, we prefer fresh, formative, exciting, cutting-edge submissions of ongoing work to summative, cut-and-dried, finished academic works.</p>
+
+<ul>
+<li>How does live programming augment or replace existing development tools/workflows?</li>
+<li>What are the appropriate tool visualizations and affordances?</li>
+<li>What are actual (vs perceived) benefits for development?</li>
+<li>What tasks and programming paradigms is it suited for?</li>
+<li>How can it be implemented in real systems?</li>
+<li>What language features help or hinder live programming?</li>
+<li>What are the degrees of ``liveness''?</li>
+<li>How do existing technologies fit on the spectrum of liveness?</li>
+<li>What semantic issues are there?</li>
+<li>What are the parallels with the shift from CLI to GUI interfaces?</li>
+</ul><h2>Submissions</h2>
+
+<p>We solicit two kinds of submissions: live demos, and short talks with accompanying position papers. Submissions that receive the greatest number of recommendations by the program committee will be allocated 10 minutes during a morning session. All accepted submissions will have an accompanying public blog post. Authors also have the option to include their accepted submission in the workshop's official proceedings.</p>
+
+<p>TODO: easychair link
+TODO: guidance on submitting demos
+TODO: formatting, etc guidelines</p>
+
+<h2>Schedule and Program</h2>
+
+<ul>
+<li>Morning: talks and demos (TBD)</li>
+<li>Afternoon: unconference</li>
+</ul><h2>Program Committee</h2>
+
+<p>TBD</p>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">LIVE 2013 maintained by <a href="https://github.com/liveprogramming">liveprogramming</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/liveprogramming">liveprogramming</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
-
   </body>
 </html>
