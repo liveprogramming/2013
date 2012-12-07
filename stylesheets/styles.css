@@ -850,6 +850,11 @@ nav ul a:hover {
   color: #999;
 }
 
+.logoflavor {
+	float: left;
+	padding-right: .9em;
+}
+
 footer {
   width: 180px;
   position: fixed;
