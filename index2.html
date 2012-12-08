@@ -65,13 +65,13 @@
 		#console li:last-child:after {
 			content: ''
 		}
+		#console ul li em:first-child {
+			font-style: normal;
+			color: blue;
+		}
 		#console em {
 			font-style: normal;
 			color: green;
-		}
-		#console b {
-			font-weight: normal;
-			color: blue;
 		}
 		#console em:before {
 			content: '"'
@@ -105,53 +105,61 @@
 			<h2>dates</h2>
 			
 			<ul>
-				<li><em>archival submissions</em>: <em>Feb 7, 2013</em></li>
-				<li><em>author notification</em>: <em>Feb 28, 2013</em></li>
-				<li><em>camera-ready papers</em>: <em>Mar 7, 2013</em></li>
-				<li><em>non-archival submissions</em>: <b>nil</b></li>
-				<li><em>venue</em>: <em>May 19, 2013</em></li>
+				<li><em>Feb &nbsp;7, 2013</em>: <em>Research papers</em></li>
+				<li><em>Feb 28, 2013</em>: <em>Author notification</em></li>
+				<li><em>Mar &nbsp;7, 2013</em>: <em>Camera-ready papers</em></li>
+				<li><em>May &nbsp;2, 2013</em>: <em>Tool demonstrations</em></li>
+				<li><em>May 19, 2013</em>: <em>Workshop</em></li>
 			</ul>	
 				
-			<h2>description</h2>
+			<h2>goal</h2>
 				
-			<p>"This workshop will focus on exploring notions and degrees of live programming as they relate to software development, creative activities, learning, and performance.</p>
-			<p>The workshop is a venue for sharing exciting live programming ideas, demos, and getting diverse feedback on ideas and works-in-progress.</p>
-			<p>We are interested in techniques, tools, demos, infrastructures, language design insights, and questions that stimulate interest and understanding in live programming concepts.</p>
-			<p>The workshop will consist of morning demo/lightning talk sessions, and the remainder of the day will be in an unconference format.</p>
-			<p>We invite submissions of demos or position papers broadly related to live programming. The submission deadline is February 7, 2013. The workshop will be held on May 19, co-located with ICSE 2013 in San Francisco, USA."</p>
-			
-			<h2>what_is_live_programming</h2>
-			
-			<p>"Live programming is a recent catchphrase for programming systems that change the traditional, synchronous edit/compile/run conversation of programming into an asynchronous conversation with instantaneous, intuitive, and often visual feedback. </p>
-			<p>In the past year, the concept of <em>live programming</em> has captured the imagination of professional software developers and software engineering researchers. Bret Victor's February talk <a href="http://vimeo.com/36579366">"Inventing on Principle"</a>, which features compelling demonstrations of live programming concepts, has spurred widespread interest, discussions, and followup experiments. Since then, new projects such as <a href="http://www.lighttable.com/">Light Table</a>, <a href="http://circa-lang.org/">Circa</a>, and others have explored various dimensions of liveness in programming languages and environments. Meanwhile, in the past few years a <a href="http://toplap.org/">community</a> has formed around the related idea of <em>live coding</em>---live audiovisual performances which use computers and algorithms as ephemerally constructed instruments. In contrast to the reflective, persistent nature of live programming precursors like Smalltalk, live coding emphasizes the ephemeral, reactive nature of live performance.</p>
-			
+			<p><em>We want to leverage the current interest in live programming by bringing together researchers and practitioners to collaborate and learn from each other.</em></p>
+				
+			<p><em>The term 'live programming' is a recent catchphrase for programming systems that abandon the traditional edit-compile- run cycle in favor of an instantaneous user experience with live feedback on a program's runtime behavior. Live programming is a quickly-developing topic being defined by practitioners and researchers with diverse backgrounds and interests; it received broad interest among professional software developers and software engineering researchers in the past year.</em></p>
+				
+			<p><em>The goal of this workshop is to focus on exploring notions and degrees of live programming as they relate to software development, creative activities, learning, and performance. We are interested in techniques, tools, demos, infrastructures, languages design insights, and questions that stimulate interest and understanding in live programming concepts.</em></p>
+				
 			<h2>topics</h2>
+
+			<p><em>The workshop will be in the format of an unconference, with topics decided by the interests of the attendees. Below are examples of some, but by far not all (as organizers we do not want to limit the scope of the workshop with our own notion of live programming!) questions that we hope to discuss in the duration of the workshop.</em></p>
+
+			<p><em>We encourage position papers, tool demonstrations, and live coding performances that raise excitement and bring insight to these and other questions.</em></p>
+
+			<ol>
+				<li><em>What are the defining features of live programming and live coding environments?</em>
+				<li><em>How can existing programming systems become more interactive?</em>
+				<li><em>How do live programming environments help or hinder learning?</em>
+				<li><em>What are historical precedents for live programming? Why did they succeed/fail?</em>
+				<li><em>How does live programming augment/replace existing development tools/workflows?</em>
+				<li><em>What are appropriate tool visualizations and affordances?</em>
+				<li><em>What developer activities and programming paradigms benefit most from live programming?</em>
+				<li><em>What language features help or hinder live programming?</em>
+				<li><em>How do existing technologies fit on the spectrum of liveness?</em>
+				<li><em>How to apply live programming in non-audio-visual, possibly industrial domains?</em>			
+			</ol>
 			
-			<p>The topics below are examples, not bounds. We hope to form a research agenda by bringing people with diverse viewpoints and backgrounds together. So, we prefer fresh, formative, exciting, cutting-edge submissions of ongoing work to summative, cut-and-dried, finished academic works.</p>
+			<h2>submission_guidelines</h2>
+
+			<p><em>We solicit two kinds of submissions</em><p>
 
 			<ul>
-				<li>How does live programming augment or replace existing development tools/workflows?</li>
-				<li>What are the appropriate tool visualizations and affordances?</li>
-				<li>What are actual (vs perceived) benefits for development?</li>
-				<li>What tasks and programming paradigms is it suited for?</li>
-				<li>How can it be implemented in real systems?</li>
-				<li>What language features help or hinder live programming?</li>
-				<li>What are the degrees of ``liveness''?</li>
-				<li>How do existing technologies fit on the spectrum of liveness?</li>
-				<li>What semantic issues are there?</li>
-				<li>What are the parallels with the shift from CLI to GUI interfaces?</li>
-			</ul>	
+				<li><em>Closed-Access Submissions</em>: <em>Research papers (4 pages) that present novel research ideas and early results; and position papers (2 pages) that raise open issues with the potential to stimulate discussion at the workshop. Papers are peer-reviewed by the program committee and will be published behind the paywall of ICSE's academic publisher. If you are a scholar looking for a traditional publication, this is your submission format.</em></li>
+				<li><em>Open-Access Submissions</em>: <em>Tool demonstrations and performances that present exciting live programming systems and bring insight into the questions addressed by the workshop. Submissions are curated by the program committee, will be published on the workshop's website and archived on Github. If you are a practitioner (or a scholar looking for an open-access publication), this is your submission format.</em></li>
+			</ul>		
+				
+			<p><em>Submission guidelines for both formats are</em><p>
 
-			<h2>workshop_format</h2>
-		
-			<h2>submissions</h2>
+			<ul>	
+				<li><em>Be electronic</em>: <em>Submit your research paper or tool demonstration as PDF document, using the workshop's easychair website. Research papers must follow the ICSE formatting guidelines, tool demonstrations and performances should refer to a downloadable tool or video.</em>
+				<li><em>Be short</em>: <em>Please keep all submissions under 4 pages.</em>
+				<li><em>Be innovative</em>: <em>It is okay to propose a recent idea that still has some unfinished sides to it. This is supposed to be a workshop, not a mini-conference.</em>
+				<li><em>Be a rebel</em>: <em>Neglect these guidelines if you feel that your idea needs a special treatment in some way.</em>
+			</ul>
 			
-			<p>We solicit two kinds of submissions: live demos, and short talks with accompanying position papers. Submissions that receive the greatest number of recommendations by the program committee will be allocated 10 minutes during a morning session. All accepted submissions will have an accompanying public blog post. Authors also have the option to include their accepted submission in the workshop's official proceedings.</p>
-			<p>
-			Please make your submission <a href="https://www.easychair.org/conferences/?conf=live2013">here</a>.  All submissions must conform at time of submission to the <a href="http://2013.icse-conferences.org/content/submission-guidelines">ICSE 2013 formatting and submission instructions</a>. 
-			</p>
 			
-			<h2>organizing_committee</h2>
+			<h2>organizers</h2>
+			
 			<ol>
 				<li><em>Brian Burg</em></li>
 				<li><em>Adrian Kuhn</em></li>	
@@ -159,9 +167,8 @@
 			</ol>		
 
 			<h2>program_committee</h2>
-			<ul>
-				<li>"TBA"</li>
-			</ul>
+			
+			<p>nil</p>
 			
 			<!-- Include a console, somehow ... -->
 				
