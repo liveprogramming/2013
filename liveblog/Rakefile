@@ -95,6 +95,22 @@ task :page do
   end
 end # task :page
 
+desc 'Move all images in images/ to the current date image directory'
+task :images do
+	images = FileList['images/*.*']
+   time = Time.new
+   target = Rake.application.original_dir + time.strftime('/%Y/%m/%d/')
+   #unless the file list is empty
+   unless images.existing.empty?
+		puts 'Cleaning images: ' + images.existing.to_s + ' => ' + target
+      begin
+			Dir::mkdir(target)
+      rescue
+      end
+      mv images.existing, target
+   end
+end
+
 desc "Launch preview environment"
 task :preview do
   system "jekyll --auto --server"

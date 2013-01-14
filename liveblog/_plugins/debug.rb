@@ -5,6 +5,8 @@
 #  {{ site.posts | debug }}
 #
 require 'pp'
+require 'jekyll/scholar'
+
 module Jekyll
   # Need to overwrite the inspect method here because the original
   # uses < > to encapsulate the psuedo post/page objects in which case
