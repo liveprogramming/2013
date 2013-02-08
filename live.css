@@ -58,6 +58,7 @@ header.home h2 {
 	font-style: italic;
 	padding: 0 0 76px;
 }
+
 nav {
 	width: 100%;
 	position: absolute;
@@ -105,10 +106,52 @@ nav ul.home li a {
 nav ul.home li:hover {
 	background: #448;
 }
+
 header.home nav a.active, header.home nav a {
 	color: #ffe;
 } 
 
+
+footnav {
+	width: 100%;
+	/*position:relative;
+	bottom: 48px;*/
+}
+footnav ul {
+	padding: 0;
+	margin: 0;
+}
+footnav ul.bar {
+	float: left;
+}
+footnav li {
+	float: left;
+	display: block;
+	font-size: 24px;
+	font-weight: normal;
+	font-family: 'Monaco';
+	padding: 8px 14px;
+	margin: 0 8px;
+	border-radius: 7px;
+}
+
+footnav span {
+	text-align:center;
+}
+
+footnav a, footnav a:hover {
+	font-style: normal;
+	text-decoration: none;
+}
+footnav a {
+	color: black;
+}
+footnav ul.home li {
+	background: #66b;
+}
+footnav ul.home li a {
+	color: #ffe;	
+}
 
 div.main {
 	margin: 30px 0;
@@ -149,7 +192,9 @@ footer p.twitter {
 	font-family: Times;
 	color: #88A;
 }
+
+
 footer hr {
 	clear: both;
-	margin-bottom: 64px;
+	margin-bottom: 32px;
 }
