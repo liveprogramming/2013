@@ -3,6 +3,8 @@
 
 Workshop in Live Programming 2013
 
+- http://liveprogramming.github.com/2013
+
 The workshop is a venue for sharing exciting live programming ideas,
 demos, and getting diverse feedback on ideas and
 works-in-progress. the workshop will consist of morning demo/lightning
